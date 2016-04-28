@@ -25,8 +25,13 @@
             // prompt the user to guess the original word when given the scrambled word
             var guess = prompt("Can you guess what " + scrambledRandomWord + " is unscrambled?");
             // If the user guesses wrong, tell them they were wrong and the right word.
-            
             // If the user guesses the correct word, congratulate them.
+
+            if (guess !== randomWord) {
+                alert("You're wrong. The correct answer is " + randomWord);
+            } else {
+                alert("Congratulations!!! That is correct.");
+            }
 
             playing = confirm("Press OK To keep playing or Cancel to quit");
 
